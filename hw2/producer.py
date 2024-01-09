@@ -5,14 +5,14 @@ import time
 import sys
 
 
-def random(min_value, max_value):
+def random_num(min_value, max_value):
     return random.randint(min_value, max_value)
 
-N = random(120, 180)
+N = random_num(120, 180)
 
 for i in range(N):
-    x = random(1, 9)
-    y = random(1, 9)
+    x = random_num(1, 9)
+    y = random_num(1, 9)
     o = random.choice(['+', '-', '*', '/'])
 
     exp = f"{x} {o} {y}"
